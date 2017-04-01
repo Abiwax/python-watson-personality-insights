@@ -25,7 +25,8 @@
                 },
                 dataType: "json",
                 success: function (result) {
-                    $('.review').empty().html(result.reviewText);
+                    $('#review').css('display', 'block');
+                    $('.reviewtext').empty().append(result.reviewText);
                     personality_data = result.personality_data;
                     personality_words = result.personality;
                     values_words = result.needs;
@@ -43,7 +44,7 @@
         <h1>Personality Insights</h1>
         <h2>Insights on Amazon Instant Video Reviews</h2>
     </header>
-    <div class="container" style="margin-left: 30px; margin-right: 30px;">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="dropdown">
@@ -63,7 +64,7 @@
             <div class="col-md-12">
                 <div id="review" style="display: none;" class="text-justify">
                     <h2>Current Review Text</h2>
-                    <p class="review" style="height: 100px; overflow: auto;"></p>
+                    <p class="reviewtext" style="height: 100px; overflow: auto;"></p>
                 </div>
             </div>
             <div class="col-md-12 wordcloud" style="margin-left: -20px; display: none; margin-top: 20px;">
