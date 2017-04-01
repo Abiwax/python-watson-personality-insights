@@ -42,7 +42,7 @@ cf login
 cf push
   ```
 
-4. Get the url listed in the output of the push command, go to abipersonality/settings and add that url to your list of allowed hosts on 28.
+4. Get the url listed in the output of the push command, go to abipersonality/settings and add that url to your list of allowed hosts on line 28.
 
 5. Run ```cf push``` again.
 
