@@ -15,7 +15,7 @@ It makes use of JQCloud javascript library and d3.js library to graphical show t
 
 ## To begin running locally:
 1. Get your personality insight credentials from IBM Bluemix and input the credentials in media/insights_cred.json
-2. On your terminal, run ```**python manage.py migrate**``` and ```**python manage.py runserver**``` to run the application locally.
+2. On your terminal, run ```python manage.py migrate``` and ```python manage.py runserver``` to run the application locally.
 3. Run ```http://127.0.0.1:8000/``` on your browser to view the application.
 
 ## To begin running on bluemix:
