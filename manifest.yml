@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: abipersonality
+  host: abipersonality
+  disk_quota: 1024M
+  buildpack: python_buildpack
+  command: bash ./run.sh
