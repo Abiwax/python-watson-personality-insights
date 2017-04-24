@@ -54,8 +54,6 @@ cf push
 
 <a href="https://bluemix.net/deploy?repository=https://github.com/Abiwax/python-watson-personality-insights.git" target="_blank"> <img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix"></a>
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/Abiwax/python-watson-personality-insights.git)
-
 
   #### ScreenShots
 <div>
