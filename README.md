@@ -50,6 +50,8 @@ cf push
 
 7. Make any changes you want and re-deploy to Bluemix using ```cf push```
 
+8. To Deploy this on IBM Bluemix, use the button below.
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=<git_repository_URL> # [required])
 
   #### ScreenShots
 <div>
