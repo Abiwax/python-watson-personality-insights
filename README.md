@@ -52,7 +52,7 @@ cf push
 
 8. To Deploy this on IBM Bluemix, use the button below.
 
-<a href="https://bluemix.net/deploy?repository=https://github.com/Abiwax/python-watson-personality-insights.git"> <img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix"></a>;
+<a href="https://bluemix.net/deploy?repository=https://github.com/Abiwax/python-watson-personality-insights.git" target="_blank"> <img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix"></a>
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/Abiwax/python-watson-personality-insights.git)
 
