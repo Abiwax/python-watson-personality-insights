@@ -9,20 +9,17 @@ from requests.auth import HTTPBasicAuth
 # templates folder is registered in our settings file as our templates directory
 # which makes it easy for the server to get our index.html page
 def index(request):
-    reviews = []
-    if request.POST:
-        reviewerText = request.POST['reviewerText']
-        print reviewerText
-    else:
-        with open(settings.MEDIA_ROOT + "/reviews_amazon_instant_31.json") as review:
-            reviews = json.load(review)
+    reviews = all_reviews()
     return render(request, "personality/index.html", {'reviews': reviews})
 
-
-def review(request):
+def all_reviews():
     reviews = []
     with open(settings.MEDIA_ROOT + "/reviews_amazon_instant_31.json") as review:
         reviews = json.load(review)
+    return reviews
+
+def review(request):
+    reviews = all_reviews()
     if request.POST:
         index = request.POST['index']
         reviewText = reviews[int(index)]["reviewText"]
@@ -49,7 +46,7 @@ def review(request):
         personality_data["children"].append(needs)
         personality_data["children"].append(values)
         formatted_word['personality_data'] = personality_data
-    return JsonResponse(formatted_word)
+        return JsonResponse(formatted_word)
 
 
 def format(response):
